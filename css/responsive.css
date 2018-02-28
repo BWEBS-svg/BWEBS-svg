@@ -191,7 +191,7 @@ header{
 }
 
 .details .wrapper .amenities{
-	float: right;
+	float: left;
 	width: 30%;
 	padding: 5px 15px;
 }
@@ -419,6 +419,11 @@ footer .copyrights a.ph_link{
 	}
 }
 
+@media (max-width:860px){
+    footer h3{
+        text-align: left;
+    }
+}
 
 @media (max-width:800px){
     .hero{
