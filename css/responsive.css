@@ -149,40 +149,87 @@ header{
 	overflow: hidden;
 }
 
-.details .wrapper .slideshow{
+.details .wrapper .pictures{
   float: left;
 	width: 70%;
 	padding: 10px;
 	max-width: 550px;
 }
 
-#carousel-custom .carousel-indicators {
-  margin: 10px 0 0;
-  overflow: auto;
-  position: static;
-  text-align: left;
-  white-space: nowrap;
-	display: inline-block;
-  width: 100%;
+.pictures .static-pic{
+  margin-bottom: 3%;
 }
-#carousel-custom .carousel-indicators li {
-  -webkit-border-radius: 0;
-  border-radius: 0;
-  display: inline-block;
-  height: 50px;
-  margin: 0 !important;
-  width: 50px;
+
+.pictures .gallery{
+  text-decoration: none;
+  letter-spacing: 1px;
+  font-style: italic;
+  color: #fff;
 }
-#carousel-custom .carousel-indicators li img {
+
+.gallery .gallery-btn{
+  background: #5385b8;
+  padding: 20px 40px;
+  border: 2px solid #bfd9f1;
   display: block;
-  opacity: 0.5;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0 auto;
 }
-#carousel-custom .carousel-indicators li.active img {
-  opacity: 1;
-	border-radius: 25%;
+
+.storey{
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
 }
-#carousel-custom .carousel-indicators li:hover img {
-  opacity: 0.75;
+
+.storey h2{
+  text-align: center;
+}
+
+.storey .sections{
+  display: block;
+  overflow: hidden;
+  position: relative;
+}
+
+.floating-box {
+  float: left;
+  width: 250px;
+  height: 140px;
+  margin: 10px;
+  overflow: hidden;
+  border: 3px solid #5385b8;
+}
+
+.modal{
+  position: fixed;
+  left: 0;
+  top: 0;
+  overflow: auto; 
+  background-color: black;  
+  z-index: 1; 
+  width: 100%;
+  height: 100%;
+  display: none;
+  padding-top: 10%;
+}
+
+.modal-content {
+  margin: auto;
+  max-width: 1200px;
+  position: relative;
+  width: 50%;
+}
+
+.close_button {
+  color: #fff;
+  position: absolute;
+  top: 10px;
+  right: 35px;
+  cursor: pointer;
+  font-size: 40px;
+  font-weight: bold;
 }
 
 .details .wrapper .amenities{
@@ -368,7 +415,7 @@ footer .copyrights a.ph_link{
 		line-height: 70px;
 	}
 	
-  .slideshow{
+  .pictures{
     min-width: 100%;
   }
 
@@ -408,6 +455,10 @@ footer .copyrights a.ph_link{
 		font-size: 15px;
 		line-height: 40px;
 	}
+
+  .gallery .gallery-btn{
+    width: 100%;
+  }
 	
   footer .about > ul > li{
     font-size: 14px;
@@ -415,7 +466,7 @@ footer .copyrights a.ph_link{
 }
 
 @media (max-width: 450px){
-	.slideshow{
+	.pictures{
     padding: 0 !important;
 	}
 }
