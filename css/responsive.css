@@ -196,10 +196,15 @@ header{
 .floating-box {
   float: left;
   width: 250px;
-  height: 140px;
+  height: 200px;
   margin: 10px;
   overflow: hidden;
   border: 3px solid #5385b8;
+}
+
+.floating-box img{
+  height: 200px;
+  width: 250px;
 }
 
 .modal{
@@ -220,6 +225,7 @@ header{
   max-width: 1200px;
   position: relative;
   width: 50%;
+  height: 150px;
 }
 
 .close_button {
@@ -275,10 +281,6 @@ header{
   color: #fff;
 }
 
-/* Next & previous buttons */
-.carousel-control{
-  width: 6% !important;
-}
 
 .prev,
 .next {
@@ -293,8 +295,7 @@ header{
   font-size: 20px;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
-  user-select: none;
-  -webkit-user-select: none;
+  vertical-align: middle;
 }
 
 .next {
@@ -439,6 +440,11 @@ footer .copyrights a.ph_link{
 		font-size: 16px;
 		line-height: 50px;
 	}
+  .modal-content {
+    width: 80%;
+    height: 350px;
+    margin-top: 20px;
+  }
 }
 
 
