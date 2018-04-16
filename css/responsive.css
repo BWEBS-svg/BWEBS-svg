@@ -203,8 +203,8 @@ header{
 }
 
 .floating-box img{
-  height: 200px;
-  width: 250px;
+  height: 100%;
+  width: 100%;
 }
 
 .modal{
@@ -220,12 +220,18 @@ header{
   padding-top: 10%;
 }
 
-.modal-content {
-  margin: auto;
+.modalContent {
   max-width: 1200px;
+  width: 70%;
   position: relative;
-  width: 50%;
-  height: 150px;
+  top:50%;
+  left:50%;
+  min-height: auto;
+  transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%);
+  -moz-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  box-sizing: border-box;
 }
 
 .close_button {
@@ -440,11 +446,6 @@ footer .copyrights a.ph_link{
 		font-size: 16px;
 		line-height: 50px;
 	}
-  .modal-content {
-    width: 80%;
-    height: 350px;
-    margin-top: 20px;
-  }
 }
 
 
