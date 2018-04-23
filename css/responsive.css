@@ -220,18 +220,12 @@ header{
   padding-top: 10%;
 }
 
-.modalContent {
-  max-width: 1200px;
+.modalContent img{
+  margin: auto;
+  display: block;
   width: 70%;
-  position: relative;
-  top:50%;
-  left:50%;
-  min-height: auto;
-  transform: translate(-50%,-50%);
-  -webkit-transform: translate(-50%,-50%);
-  -moz-transform: translate(-50%,-50%);
-  -ms-transform: translate(-50%,-50%);
-  box-sizing: border-box;
+  max-width: 700px;
+  height: -webkit-fill-available;
 }
 
 .close_button {
@@ -312,6 +306,7 @@ header{
 .prev:hover,
 .next:hover {
   background-color: rgba(0, 0, 0, 0.8);
+  text-decoration: none;
 }
 
 
@@ -373,14 +368,14 @@ footer .copyrights a.ph_link{
 /*  responsive css */
 
 
-@media (max-width:1500px){
+@media only screen and (max-width:1500px){
   .hero{
     height: 800px;
   }
 }
 
 
-@media (max-width: 1150px){
+@media only screen and (max-width: 1150px){
   .wrapper{
     padding: 0 20px;
     max-width: 1020px;
@@ -392,13 +387,13 @@ footer .copyrights a.ph_link{
 	}
 }
 
-@media (max-width:860px){
+@media only screen and (max-width:860px){
     footer .footer h3{
       text-align: left;
     }
 }
 
-@media (max-width:800px){
+@media only screen and (max-width:800px){
     .hero{
     height: 600px;
   }
@@ -433,8 +428,16 @@ footer .copyrights a.ph_link{
 	}
 }
 
+@media only screen and (max-width: 767px){
+  .modalContent img{
+    width: 100%;
+    height: initial;
+    margin-top: 10%;
+  }
+}
 
-@media (max-width:610px) ){
+
+@media only screen and (max-width:610px) ){
 	.hero .caption h2{
     font-size: 95px;
   }
@@ -449,7 +452,7 @@ footer .copyrights a.ph_link{
 }
 
 
-@media (max-width:500px){
+@media only screen and (max-width:500px){
   .hero .caption h2{
     font-size: 85px;
   }
@@ -472,7 +475,7 @@ footer .copyrights a.ph_link{
   }
 }
 
-@media (max-width: 450px){
+@media only screen and (max-width: 450px){
 	.pictures{
     padding: 0 !important;
 	}
