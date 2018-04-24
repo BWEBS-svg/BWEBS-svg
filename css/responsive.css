@@ -195,10 +195,11 @@ header{
 
 .floating-box {
   float: left;
-  width: 250px;
-  height: 200px;
+  width: 230px;
+  height: 250px;
   margin: 10px;
   overflow: hidden;
+  box-sizing: content-box;
   border: 3px solid #5385b8;
 }
 
@@ -223,8 +224,6 @@ header{
 .modalContent img{
   margin: auto;
   display: block;
-  width: 70%;
-  max-width: 700px;
   height: -webkit-fill-available;
 }
 
@@ -372,6 +371,7 @@ footer .copyrights a.ph_link{
   .hero{
     height: 800px;
   }
+
 }
 
 
