@@ -224,7 +224,6 @@ header{
 .modalContent img{
   margin: auto;
   display: block;
-  height: -webkit-fill-available;
 }
 
 .close_button {
