@@ -195,7 +195,7 @@ header{
 
 .floating-box {
   float: left;
-  width: 235px;
+  width: 240px;
   height: 260px;
   margin: 10px;
   overflow: hidden;
@@ -206,6 +206,12 @@ header{
 .floating-box img{
   height: 100%;
   width: 100%;
+}
+
+.back::before {
+  content: ' \21E6';
+  display: inline;
+  color: #5385b8;
 }
 
 .modal{
